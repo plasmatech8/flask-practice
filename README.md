@@ -14,7 +14,12 @@ See https://www.youtube.com/watch?v=s_ht4AKnWZg
     * Notice that if you include the `-v verbose` parameter, you can see that it is a HTML server. Not json/REST.
     * You can use `jsonify` to change the content type to something else.
 
-2. helloword_website.py:
+2. helloword_api.py:
+    * Curl with key-value pairs: `curl -d "data=example1&data2=example2" <url>`
+    * Curl with `curl -H "Content-Type: application/json" -X POST -d '{"key":"value"}' <url>`
+
+`
+3. helloworld_rest.py
     * Create a flask API using the flask-restful extension
 
 
