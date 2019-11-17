@@ -4,9 +4,9 @@
 
 Flask help menu: `flask`
 
-Run a flask python file: `python helloworld.py`
+Run a flask python file: `python <filename>.py` (i.e. `python helloword_website.py`)
 
-Send GET/POST requests via curl. Alternatively, you can use the Postman Chrome extension.
+Send GET/POST requests via curl as shown below. Alternatively, you can use the Postman Chrome extension.
 
 (Note: 127.0.0.1 can be substituted with localhost)
 
@@ -18,7 +18,6 @@ See https://www.youtube.com/watch?v=s_ht4AKnWZg
 
 1. helloword_website.py
     * Create a dynamic website with pure flask
-    * Use `python 01_helloword_website.py`
     * Notice that if you include the `-v verbose` parameter, you can see that it is a HTML server. Not json/REST.
     * You can use `jsonify` to change the content type to something else.
 
