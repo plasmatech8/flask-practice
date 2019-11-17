@@ -3,9 +3,15 @@
 ## Quick commands
 
 Flask help menu: `flask`
+
 Run a flask python file: `python helloworld.py`
 
+Send GET/POST requests via curl. Alternatively, you can use the Postman Chrome extension.
+
 ## Tutorial 1
+
+*Building a REST API using Python and Flask | Flask-RESTful*
+
 See https://www.youtube.com/watch?v=s_ht4AKnWZg
 
 1. helloword_website.py
@@ -15,10 +21,12 @@ See https://www.youtube.com/watch?v=s_ht4AKnWZg
     * You can use `jsonify` to change the content type to something else.
 
 2. helloword_api.py:
-    * Curl with key-value pairs: `curl -d "data=example1&data2=example2" <url>`
-    * Curl with `curl -H "Content-Type: application/json" -X POST -d '{"key":"value"}' <url>`
+    * Index get request:
+        * `curl http://127.0.0.1:5000/`
+    * Index post request:
+        * `curl -H "Content-Type: application/json" -X POST -d '{"key":"value"}' http://127.0.0.1:5000/`
+        * Don't use powershell or cmd. Use bash on Windows or otherwise (`bash`).
 
-`
 3. helloworld_rest.py
     * Create a flask API using the flask-restful extension
 
