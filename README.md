@@ -39,3 +39,4 @@ See https://www.youtube.com/watch?v=s_ht4AKnWZg
 1. production_website.py
     * Flask uses a debug server which updates in real-time, but does not scale well and only serves one request at a time by default.
     * Use gevent.pywsgi.WSGIServer can be used for a production website.
+    * Use same commands as above
