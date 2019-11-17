@@ -8,6 +8,8 @@ Run a flask python file: `python helloworld.py`
 
 Send GET/POST requests via curl. Alternatively, you can use the Postman Chrome extension.
 
+(Note: 127.0.0.1 can be substituted with localhost)
+
 ## Tutorial 1
 
 *Building a REST API using Python and Flask | Flask-RESTful*
@@ -20,7 +22,7 @@ See https://www.youtube.com/watch?v=s_ht4AKnWZg
     * Notice that if you include the `-v verbose` parameter, you can see that it is a HTML server. Not json/REST.
     * You can use `jsonify` to change the content type to something else.
 
-2. helloword_api.py:
+2. helloword_api.py
     * / (index) get request:
         * `curl http://127.0.0.1:5000/`
     * / (index) post request:
@@ -32,4 +34,8 @@ See https://www.youtube.com/watch?v=s_ht4AKnWZg
 3. helloworld_rest.py (using the flask-restful extension)
     * Use same commands as above
 
+## Practice 1
 
+1. production_website.py
+    * Flask uses a debug server which updates in real-time, but does not scale well and only serves one request at a time by default.
+    * Use gevent.pywsgi.WSGIServer can be used for a production website.
