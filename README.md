@@ -21,13 +21,15 @@ See https://www.youtube.com/watch?v=s_ht4AKnWZg
     * You can use `jsonify` to change the content type to something else.
 
 2. helloword_api.py:
-    * Index get request:
+    * / (index) get request:
         * `curl http://127.0.0.1:5000/`
-    * Index post request:
+    * / (index) post request:
         * `curl -H "Content-Type: application/json" -X POST -d '{"key":"value"}' http://127.0.0.1:5000/`
         * Don't use powershell or cmd. Use bash on Windows or otherwise (`bash`).
+    * /multi/(int) get request:
+        * `curl http://127.0.0.1:5000/multi/5`
 
-3. helloworld_rest.py
-    * Create a flask API using the flask-restful extension
+3. helloworld_rest.py (using the flask-restful extension)
+    * Use same commands as above
 
 
