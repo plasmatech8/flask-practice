@@ -8,7 +8,11 @@ Run a flask python file: `python <filename>.py` (i.e. `python helloword_website.
 
 Send GET/POST requests via curl as shown below. Alternatively, you can use the Postman Chrome extension.
 
-(Note: 127.0.0.1 can be substituted with localhost)
+Notes:
+* 127.0.0.1 can be substituted with localhost
+* Production servers (gunicorn, gevent WSGIServer, etc) are single-threaded, meaning that requests will need to wait for the previous one to be completed before the server can process and respond to the next.
+* If are sending requests to a CPU intensive API (which takes time to process), you will need to wait for all previous API requests to be completed - if you do not enable threading.
+* If you enable threading, and test your API/website in Google Chome, it will (as of now) try to be smart by connecting to the same socket for both tabs - resulting in a sequencial experience when sending and recieving requests.
 
 ## Tutorial 1
 
