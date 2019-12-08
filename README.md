@@ -22,6 +22,7 @@ See https://www.youtube.com/watch?v=s_ht4AKnWZg
     * You can use `jsonify` to change the content type to something else.
 
 2. helloword_api.py
+    * (Ensure you are using an appropriate terminal if using Windows i.e. bash)
     * / (index) get request:
         * `curl http://127.0.0.1:5000/`
     * / (index) post request:
